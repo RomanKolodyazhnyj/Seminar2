@@ -4,13 +4,14 @@
 // 32679 -> 6
 
 Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-string digit = Convert.ToString(number);
-if (digit.Length > 2)
+int number1 = Convert.ToInt32(Console.ReadLine());
+
+if (number1 >= 100)
 {
-    Console.WriteLine($"Третья цифра слева равна: " + digit[2]);
+    int number2 = number1 % 10;
+    Console.WriteLine($"Третья цифра слева: {number2}");
 }
 else
 {
-    Console.WriteLine("Третьей цифры нет"); 
+    Console.WriteLine("Третьей цифры нет");
 }
